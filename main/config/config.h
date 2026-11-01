@@ -25,16 +25,11 @@
  * Pin assignments — BFT (ESP32-S3 44-pin board).
  * ========================================================================= */
 
-/* Step / direction pins (contiguous GPIO 14→11 for clean PCB routing):
- *   GPIO 14: STEP- RA
- *   GPIO 13: DIR- RA
- *   GPIO 12: STEP- DEC
- *   GPIO 11: DIR- DEC
- */
-#define RA_STEP_GPIO   GPIO_NUM_14
-#define RA_DIR_GPIO    GPIO_NUM_13
-#define DEC_STEP_GPIO  GPIO_NUM_12
-#define DEC_DIR_GPIO   GPIO_NUM_11
+/* Step / direction pins (contiguous GPIO 14→11 for clean PCB routing): */
+#define DEC_STEP_GPIO  GPIO_NUM_14
+#define DEC_DIR_GPIO   GPIO_NUM_13
+#define RA_STEP_GPIO   GPIO_NUM_12
+#define RA_DIR_GPIO    GPIO_NUM_11
 
 /* Status LED — direct GPIO, LEDC PWM. */
 #define LED_GPIO        GPIO_NUM_1
